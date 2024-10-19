@@ -43,7 +43,7 @@ const singup = async (req, res) => {
   );
 
   try {
-     await SendOtp(email, htmltemplate);
+    // await SendOtp(email, htmltemplate);
     res
       .cookie("verification_Token", token)
       .json({ message: "Email sent successfully" });
